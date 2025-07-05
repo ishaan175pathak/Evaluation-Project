@@ -1,0 +1,172 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form.container {
+  background-color: white;
+  padding: 20px;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  overflow-y: scroll;
+  width: 60vw;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+  border-radius: 8px;
+}
+
+/* Section control */
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+/* Field styling */
+.form-group {
+  margin-bottom: 20px;
+  display: grid;
+}
+
+/* Inputs override center alignment from base */
+.form-group input,
+.form-group label {
+  display: block;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Inline labels (checkboxes, radios) */
+.form-group label input {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Navigation buttons */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* === Text Input Styling === */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus {
+  border-color: #673ab7; /* Google Forms purple */
+  box-shadow: 0 0 3px #a287e3;
+}
+
+/* === Custom Radio & Checkbox === */
+.form-group label {
+ position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Hide default input */
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  position: absolute;
+  display: none ;
+  cursor: pointer;
+}
+
+/* Custom box */
+.form-group input[type="checkbox"] + label::before,
+.form-group input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+/* Circle for radios */
+.form-group input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+
+input[type="checkbox"] + label::before {
+  border-radius: 4px;
+}
+
+/* Checked state */
+.form-group input[type="checkbox"]:checked + label::before,
+.form-group input[type="radio"]:checked + label::before {
+  border-color: #673ab7;
+  background-color: #673ab7;
+}
+
+/* Check mark or dot */
+.form-group input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.form-group input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Fix label/input structure */
+.form-group input[type="radio"] + label,
+.form-group input[type="checkbox"] + label {
+  padding-left: 28px;
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}

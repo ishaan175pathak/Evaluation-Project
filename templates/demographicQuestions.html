@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Part Quiz</title>
+  <link rel="stylesheet" href="../static/Stylesheets/homeGeneral.css">
+  <link rel="stylesheet" href="../static/Stylesheets/demographicQuestions.css">
+</head>
+<body>
+    <div class="form-wrapper">
+    <form id="multiPartForm" class="container" method="POST" novalidate>
+
+      <!-- Section 1 -->
+      <div class="form-section active" id="section1">
+        <h2>
+        Part 1 of 2
+        </h2>
+        <div class="form-group">
+        <label for="q1">
+          1. Please identify you age.
+        </label>
+        <input id="q1_opt1" name="q1" required="" type="radio" value="q1_opt1"/>
+        <label for="q1_opt1">
+          Option 1
+        </label>
+        <input id="q1_opt2" name="q1" type="radio" value="q1_opt2"/>
+        <label for="q1_opt2">
+          Option 2
+        </label>
+        <input id="q1_opt3" name="q1" type="radio" value="q1_opt3"/>
+        <label for="q1_opt3">
+          Option 3
+        </label>
+        <input id="q1_opt4" name="q1" type="radio" value="q1_opt4"/>
+        <label for="q1_opt4">
+          Option 4
+        </label>
+        <input id="q1_opt5" name="q1" type="radio" value="q1_opt5"/>
+        <label for="q1_opt5">
+          Option 5
+        </label>
+        <input id="q1_opt6" name="q1" type="radio" value="q1_opt6"/>
+        <label for="q1_opt6">
+          Option 6
+        </label>
+        </div>
+        <div class="form-group">
+        <label>
+          2. Please identify your gender
+        </label>
+        <input id="q2_opt1" name="q2" required="" type="radio" value="q2_opt1"/>
+        <label for="q2_opt1">
+          Option 1
+        </label>
+        <input id="q2_opt2" name="q2" type="radio" value="q2_opt2"/>
+        <label for="q2_opt2">
+          Option 2
+        </label>
+        <input id="q2_opt3" name="q2" type="radio" value="q2_opt3"/>
+        <label for="q2_opt3">
+          Option 3
+        </label>
+        <input id="q2_opt4" name="q2" type="radio" value="q2_opt4"/>
+        <label for="q2_opt4">
+          Option 4
+        </label>
+        </div>
+        <div class="form-group">
+        <label>
+          3. What is your racial/ethnic background? Select all that apply.
+        </label>
+        <input id="q3_opt1" name="q3" required="" type="checkbox" value="q3_opt1"/>
+        <label for="q3_opt1">
+          Option 1
+        </label>
+        <input id="q3_opt2" name="q3" type="checkbox" value="q3_opt2"/>
+        <label for="q3_opt2">
+          Option 2
+        </label>
+        <input id="q3_opt3" name="q3" type="checkbox" value="q3_opt3"/>
+        <label for="q3_opt3">
+          Option 3
+        </label>
+        <input id="q3_opt4" name="q3" type="checkbox" value="q3_opt4"/>
+        <label for="q3_opt4">
+          Option 4
+        </label>
+        <input id="q3_opt5" name="q3" type="checkbox" value="q3_opt5"/>
+        <label for="q3_opt5">
+          Option 5
+        </label>
+        <input id="q3_opt6" name="q3" type="checkbox" value="q3_opt6"/>
+        <label for="q3_opt6">
+          Option 6
+        </label>
+        <input id="q3_opt7" name="q3" type="checkbox" value="q3_opt7"/>
+        <label for="q3_opt7">
+          Option 7
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="q4">
+          4. If you selected "Other" for racial/ethnic background, please specify here:
+        </label>
+        <input id="q4" name="q4" required="" type="text"/>
+        </div>
+        <div class="form-navigation">
+        <button class="next-btn" type="button">
+          Next
+        </button>
+        </div>
+      </div>
+        <!-- Section 2 -->
+      <div class="form-section" id="section2">
+        <h2>
+        Part 2 of 2
+        </h2>
+        <div class="form-group">
+        <label for="q5">
+          5. Academic and Teaching Experience :
+        </label>
+        <input id="q5" name="q5" placeholder="Description (Optional)" type="text"/>
+        </div>
+        <div class="form-group">
+        <label>
+          6. How many years have you been teaching in higher education?
+        </label>
+        <input id="q6_opt1" name="q6" required="" type="radio" value="q6_opt1"/>
+        <label for="q6_opt1">
+          Option 1
+        </label>
+        <input id="q6_opt2" name="q6" type="radio" value="q6_opt2"/>
+        <label for="q6_opt2">
+          Option 2
+        </label>
+        <input id="q6_opt3" name="q6" type="radio" value="q6_opt3"/>
+        <label for="q6_opt3">
+          Option 3
+        </label>
+        </div>
+        <div class="form-group">
+        <label>
+          7. What type of students do you primarily teach? (Select all that apply):
+        </label>
+        <input id="q7_opt1" name="q7" required="" type="checkbox" value="q7_opt1"/>
+        <label for="q7_opt1">
+          Option 1
+        </label>
+        <input id="q7_opt2" name="q7" type="checkbox" value="q7_opt2"/>
+        <label for="q7_opt2">
+          Option 2
+        </label>
+        <input id="q7_opt3" name="q7" type="checkbox" value="q7_opt3"/>
+        <label for="q7_opt3">
+          Option 3
+        </label>
+        </div>
+        <div class="form-group">
+        <label>
+          8. Which types of courses do you typically teach? (Select all that apply):
+        </label>
+        <input id="q8_opt1" name="q8" required="" type="checkbox" value="q8_opt1"/>
+        <label for="q8_opt1">
+          Option 1
+        </label>
+        <input id="q8_opt2" name="q8" type="checkbox" value="q8_opt2"/>
+        <label for="q8_opt2">
+          Option 2
+        </label>
+        <input id="q8_opt3" name="q8" type="checkbox" value="q8_opt3"/>
+        <label for="q8_opt3">
+          Option 3
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="q9">
+          9. If you selected "Other" for types of courses you typically teach, please specify here:
+          </label>
+          <input id="q9" name="q9" required="" type="text"/>
+          </div>
+        <div class="form-group">
+          <label>
+            10. How often do you grade written assignments in your course?
+          </label>
+          <input id="q10_opt1" name="q10" required="" type="radio" value="q10_opt1"/>
+          <label for="q10_opt1">
+            Option 1
+          </label>
+          <input id="q10_opt2" name="q10" type="radio" value="q10_opt2"/>
+          <label for="q10_opt2">
+            Option 2
+          </label>
+          <input id="q10_opt3" name="q10" type="radio" value="q10_opt3"/>
+          <label for="q10_opt3">
+            Option 3
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            11. How confident are you in your ability to fairly and objectively grade student writing assignments?
+          </label>
+          <input id="q11_opt1" name="q11" required="" type="radio" value="q11_opt1"/>
+          <label for="q11_opt1">
+            Option 1
+          </label>
+          <input id="q11_opt2" name="q11" type="radio" value="q11_opt2"/>
+          <label for="q11_opt2">
+            Option 2
+          </label>
+          <input id="q11_opt3" name="q11" type="radio" value="q11_opt3"/>
+          <label for="q11_opt3">
+            Option 3
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            12. To what extent do you believe unconscious bias can influence grading?
+          </label>
+          <input id="q12_opt1" name="q12" required="" type="radio" value="q12_opt1"/>
+          <label for="q12_opt1">
+            Option 1
+          </label>
+          <input id="q12_opt2" name="q12" type="radio" value="q12_opt2"/>
+          <label for="q12_opt2">
+            Option 2
+          </label>
+          <input id="q12_opt3" name="q12" type="radio" value="q12_opt3"/>
+          <label for="q12_opt3">
+            Option 3
+          </label>
+        </div>
+        <div class="form-group">
+          <label>
+            13. How familiar are you with AI-assisted grading tools (e.g., ChatGPT, Turnitin AI, Grammarly)?
+          </label>
+          <input id="q13_opt1" name="q13" required="" type="radio" value="q13_opt1"/>
+          <label for="q13_opt1">
+            Option 1
+          </label>
+          <input id="q13_opt2" name="q13" type="radio" value="q13_opt2"/>
+          <label for="q13_opt2">
+            Option 2
+          </label>
+          <input id="q13_opt3" name="q13" type="radio" value="q13_opt3"/>
+          <label for="q13_opt3">
+            Option 3
+          </label>
+        </div>
+         <div class="form-navigation">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+
+       
+      </div>
+    </form>
+  </div>
+  <script src="../static/Scripts/demographicQuestions.js"></script>
+</body>
+</html>
+
+<!-- 
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block title %}
+  <title>Two-Part Quiz</title>
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{% static 'Stylesheets/demographicQuestions.css' %}">
+{% endblock %}
+
+{% block centerContent %}
+<div class="form-wrapper">
+  <form id="multiPartForm" method="POST" novalidate>
+    {% csrf_token %}
+
+    <div class="form-section active" id="section1">
+      <h2>Part 1</h2>
+
+      <div class="form-group">
+        <label for="q1">1. What is your name?</label>
+        <input type="text" name="q1" id="q1" required>
+      </div>
+
+      <div class="form-group">
+        <label>2. Choose your favorite fruits:</label>
+        <label><input type="checkbox" name="q2" value="apple"> Apple</label>
+        <label><input type="checkbox" name="q2" value="banana"> Banana</label>
+        <label><input type="checkbox" name="q2" value="orange"> Orange</label>
+      </div>
+
+      <div class="form-group">
+        <label>3. What is the capital of France?</label>
+        <label><input type="radio" name="q3" value="paris" required> Paris</label>
+        <label><input type="radio" name="q3" value="rome"> Rome</label>
+        <label><input type="radio" name="q3" value="berlin"> Berlin</label>
+      </div>
+
+      <div class="form-group">
+        <label for="q4">4. Describe yourself in one sentence:</label>
+        <input type="text" name="q4" id="q4" required>
+      </div>
+
+      <div class="form-group">
+        <label>5. Select the colors you like:</label>
+        <label><input type="checkbox" name="q5" value="red"> Red</label>
+        <label><input type="checkbox" name="q5" value="blue"> Blue</label>
+        <label><input type="checkbox" name="q5" value="green"> Green</label>
+      </div>
+
+      <div class="form-navigation">
+        <button type="button" class="next-btn">Next</button>
+      </div>
+    </div>
+
+    <div class="form-section" id="section2">
+      <h2>Part 2</h2>
+
+      <div class="form-group">
+        <label for="q6">6. What is your email?</label>
+        <input type="email" name="q6" id="q6" required>
+      </div>
+
+      <div class="form-group">
+        <label>7. Select programming languages you know:</label>
+        <label><input type="checkbox" name="q7" value="python"> Python</label>
+        <label><input type="checkbox" name="q7" value="js"> JavaScript</label>
+        <label><input type="checkbox" name="q7" value="java"> Java</label>
+      </div>
+
+      <div class="form-group">
+        <label>8. Which is a front-end framework?</label>
+        <label><input type="radio" name="q8" value="react" required> React</label>
+        <label><input type="radio" name="q8" value="django"> Django</label>
+        <label><input type="radio" name="q8" value="flask"> Flask</label>
+      </div>
+
+      <div class="form-group">
+        <label for="q9">9. What motivates you?</label>
+        <input type="text" name="q9" id="q9" required>
+      </div>
+
+      <div class="form-group">
+        <label>10. Select your preferred development tools:</label>
+        <label><input type="checkbox" name="q10" value="vscode"> VS Code</label>
+        <label><input type="checkbox" name="q10" value="pycharm"> PyCharm</label>
+        <label><input type="checkbox" name="q10" value="sublime"> Sublime</label>
+      </div>
+
+      <div class="form-navigation">
+        <button type="button" class="prev-btn">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block JavaScript %}
+{% endblock %} -->

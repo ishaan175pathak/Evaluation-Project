@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRB Submisssion</title>
+    
+    <link rel="stylesheet" type="text/css"  href="../static/Stylesheets/homeGeneral.css">
+
+    <link rel="stylesheet" type="text/css"  href="../static/Stylesheets/homeSpecific.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="consent-box" id="consent-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla nostrum eum voluptatibus praesentium quia fugiat, delectus et esse eius provident nihil tenetur dolorem quaerat quasi consequuntur voluptates placeat? Ducimus!Beatae molestiae debitis itaque! Assumenda, quaerat alias nobis a reprehenderit voluptatum sed molestiae commodi ratione rerum totam culpa sunt odit quos eos laudantium natus perspiciatis illo nemo labore saepe suscipit.Natus soluta earum vitae ad est facilis doloribus quam officiis assumenda praesentium sequi, reprehenderit sunt explicabo dolor quos quo, magnam perferendis. Fuga consectetur eum iure aut facere molestias debitis commodi!Iure repellat unde accusamus eius quae impedit deleniti repellendus laboriosam earum, doloribus odio eaque maiores sequi vero, facilis odit provident alias, veniam autem itaque sapiente. Culpa corporis deleniti eaQuaerat alias repudiandae, dicta similique porro necessitatibus et, vitae facilis deserunt, voluptas veritatis. Magni voluptate dicta itaque quo, labore et repellendus dolores distinctio doloremque odit voluptates libero maxime reprehenderit enim!Perferendis recusandae deserunt minima eius omnis ipsam, sed ex, placeat dignissimos excepturi itaque eos, porro laudantium odio doloremque praesentium facere magnam aut necessitatibus expedita corporis alias vero. Blanditiis, expedita eos.Cum, maxime iste temporibus minima numquam non maiores quaerat quod animi error aperiam, et ad ut necessitatibus laudantium fuga magni eius nulla fugiat quidem recusandae quos consequatur ipsam? Est, soluta.Asperiores eligendi sit iste rerum voluptate illum officia reiciendis ut debitis optio? Doloremque assumenda debitis commodi. Unde voluptatibus temporibus, aliquid fuga aperiam deserunt assumenda error ad. Quod sapiente pariatur facere.Repellendus excepturi hic vero eligendi suscipit perferendis magni animi, cum saepe ipsa illum nisi velit! Quod, ullam veritatis. Veritatis porro nemo laudantium temporibus. Debitis blanditiis molestiae excepturi voluptatum maxime! Alias!Quam ex asperiores, maiores magnam impedit labore non doloremque eos quisquam optio repudiandae cumque ratione assumenda, magni at soluta nobis sapiente molestias obcaecati temporibus. Aut qui necessitatibus animi dolor aliquam.
+        </div>
+
+        <div style="margin-top: 10px;">
+            <input type="checkbox" id="consent-checkbox" disabled />
+            <label for="consent-checkbox" id="agree-text" class="disabled">I agree to the terms above</label>
+        </div>
+
+    </div>
+    <script src="../static/Scripts/home.js"></script>
+</body>
+</html>
+
+
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>IRB Submisssion</title>
+    {% endblock %}
+
+    <link rel="stylesheet" type="text/css"  href="{% static 'Stylesheets/homeGeneral.css' %}">
+
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css"  href="{% static 'Stylesheets/homeSpecific.css' %}">
+    {% endblock %}
+</head>
+<body>
+    
+    
+    {% block centerContent %}
+
+        <div class="container">
+            <div class="consent-box" id="consent-box">
+                {% if consent_text %}
+                    {{ consent_text }}
+                {% else %}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla nostrum eum voluptatibus praesentium quia fugiat, delectus et esse eius provident nihil tenetur dolorem quaerat quasi consequuntur voluptates placeat? Ducimus!
+                    Beatae molestiae debitis itaque! Assumenda, quaerat alias nobis a reprehenderit voluptatum sed molestiae commodi ratione rerum totam culpa sunt odit quos eos laudantium natus perspiciatis illo nemo labore saepe suscipit.
+                    Natus soluta earum vitae ad est facilis doloribus quam officiis assumenda praesentium sequi, reprehenderit sunt explicabo dolor quos quo, magnam perferendis. Fuga consectetur eum iure aut facere molestias debitis commodi!
+                    Iure repellat unde accusamus eius quae impedit deleniti repellendus laboriosam earum, doloribus odio eaque maiores sequi vero, facilis odit provident alias, veniam autem itaque sapiente. Culpa corporis deleniti ea temporibus?
+                    Quaerat alias repudiandae, dicta similique porro necessitatibus et, vitae facilis deserunt, voluptas veritatis. Magni voluptate dicta itaque quo, labore et repellendus dolores distinctio doloremque odit voluptates libero maxime reprehenderit enim!
+                    Perferendis recusandae deserunt minima eius omnis ipsam, sed ex, placeat dignissimos excepturi itaque eos, porro laudantium odio doloremque praesentium facere magnam aut necessitatibus expedita corporis alias vero. Blanditiis, expedita eos.
+                    Cum, maxime iste temporibus minima numquam non maiores quaerat quod animi error aperiam, et ad ut necessitatibus laudantium fuga magni eius nulla fugiat quidem recusandae quos consequatur ipsam? Est, soluta.
+                    Asperiores eligendi sit iste rerum voluptate illum officia reiciendis ut debitis optio? Doloremque assumenda debitis commodi. Unde voluptatibus temporibus, aliquid fuga aperiam deserunt assumenda error ad. Quod sapiente pariatur facere.
+                    Repellendus excepturi hic vero eligendi suscipit perferendis magni animi, cum saepe ipsa illum nisi velit! Quod, ullam veritatis. Veritatis porro nemo laudantium temporibus. Debitis blanditiis molestiae excepturi voluptatum maxime! Alias!
+                    Quam ex asperiores, maiores magnam impedit labore non doloremque eos quisquam optio repudiandae cumque ratione assumenda, magni at soluta nobis sapiente molestias obcaecati temporibus. Aut qui necessitatibus animi dolor aliquam.
+                {% endif %}
+            </div>
+
+            <p id="agree-text" class="disabled">I agree to the terms above</p>
+            <button id="agree-btn" disabled>I Agree</button>
+        </div>
+    
+    {% endblock %}
+
+
+    {% block JavaScript %}
+        <script>
+            const nextURLPath = "{% url 'demographicQuestions' %}";
+        </script>
+        <script src="{% static 'Scripts/home.js' %}"></script>
+    {% endblock %}
+</body> -->
+

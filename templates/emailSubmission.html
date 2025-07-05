@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+  <title>email submission</title>
+{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{% static 'Stylesheets/finalSubmission.css' %}">
+{% endblock %}
+
+
+{% block centerContent %}
+
+  <div class="form-container">
+    <form>
+      <fieldset class="floating-label">
+        <input type="text" id="name" name="name" placeholder=" " required />
+        <legend>Full Name</legend>
+      </fieldset>
+
+      <fieldset class="floating-label">
+        <input type="email" id="email" name="email" placeholder=" " required />
+        <legend>Email Address</legend>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+{% endblock %}

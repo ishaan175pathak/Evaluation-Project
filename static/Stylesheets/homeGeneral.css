@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    height: 60vh;
+    width: 60vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.background-text {
+  position: absolute;
+  font-size: 12vw;
+  color: rgba(255, 255, 255, 0.05);
+  font-weight: bold;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
